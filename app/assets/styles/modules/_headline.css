@@ -1,0 +1,34 @@
+.headline {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: #2f5572;
+
+
+  @media(min-width: 660px){
+    font-size: 2.875rem;
+  }
+
+
+  &--centered {
+    text-align: center;
+
+  }
+  &--orange {
+    color: #d59541;
+    font-size: 1.875rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 100;
+  }
+  &--b-margin-samll {
+    margin-bottom: .5em;
+  }
+
+  &--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+  &--no-t-margin {
+    margin-top: 0;
+  }
+}
