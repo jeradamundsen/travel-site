@@ -9,4 +9,18 @@
     background-color: #2f5572;
     color:
   }
+  &--testimonials {
+    background-color: rgba(255, 255, 255, .8);
+
+    @mixin atSmall {
+      background-color: #e0e6ef;
+    }
+
+
+    @mixin atMedium {
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      background-size: cover;
+    }
+
+  }
 }

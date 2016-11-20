@@ -3,3 +3,8 @@
     @mixin-content;
   }
 }
+@define-mixin atMedium {
+  @media (min-width: 880px){
+    @mixin-content;
+  }
+}

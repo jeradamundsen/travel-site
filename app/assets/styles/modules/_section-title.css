@@ -4,6 +4,9 @@
   font-weight: 300;
   text-align: center;
 
+  &--color {
+    color: $mainBlue;
+  }
   @media(min-width: 660px){
     font-size: 3.75rem;
   }
@@ -17,6 +20,8 @@
     margin-bottom: .6rem;
 
   @media(min-width: 660px) {
+    position: relative;
+    top: 8px;
     margin-right: .5rem;
     margin-left: 0;
     margin-bottom: 0;

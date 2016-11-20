@@ -8,11 +8,13 @@
 &__b-margin-until-medium {
   margin-bottom: 1rem;
 }
-
-&--white p, h3 {
+&--t-padding {
+  padding-top: 80px;
+}
+/*&--white p, h3 {
   color: #FFF;
 
-}
+}*/
 
 
 
@@ -29,10 +31,17 @@
 
     }
 
+    &--gutters-small > div {
+      padding-right: 45px;
+    }
+
     &--gutters-large > div {
       padding-right: 100px
     }
 
+    &--gutters-small {
+      margin-right: -45px;
+    }
     &--gutters {
       margin-right: -65px;
       }
@@ -61,5 +70,16 @@
     &__medium-8--smaller {
       width: 63%;
     }
+  }
+
+  &--equal-height-at-medium {
+    @media (min-width: 660px){
+      display: flex
+    }
+
+  & > div {
+    float: none;
+    display: flex;
+  }
   }
 }
