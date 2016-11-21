@@ -9,6 +9,14 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
+    padding-top: 140px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+
+    @mixin atMedium {
+      padding-top: 60px;
+     
+    }
   }
 
   &__title {
