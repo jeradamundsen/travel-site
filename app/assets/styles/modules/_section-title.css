@@ -7,6 +7,10 @@
   &--color {
     color: $mainBlue;
   }
+
+  &--less-margin {
+    margin-bottom: 1.3rem;
+  }
   @media(min-width: 660px){
     font-size: 3.75rem;
   }
