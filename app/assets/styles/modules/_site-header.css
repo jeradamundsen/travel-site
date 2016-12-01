@@ -12,6 +12,7 @@
 
   @mixin atSmall {
     background-color: rgba(47, 85, 114, .4);
+    position: fixed;
   }
 
   &__button-container {
