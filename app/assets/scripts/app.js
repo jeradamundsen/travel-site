@@ -7,4 +7,4 @@ var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".feature-item"), "85%");
 new RevealOnScroll($(".testimonial"), "65%");
 
-var StickyHeader = new StickyHeader();
+var stickyHeader = new StickyHeader();
