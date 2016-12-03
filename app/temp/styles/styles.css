@@ -818,15 +818,19 @@ a {
   }
 }
 
-.section-title .strong {
+.section-title strong {
   font-weight: 500;
 }
 
 .section-title__icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: .6rem;
+}
+
+.section-title__icon p {
+  display: inline-block;
 }
 
 @media(min-width: 660px) {
