@@ -1310,6 +1310,15 @@ edit gulp/templates/sprite*/
   height: 72px;
 }
 
+.social-icons__icon .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media (min-width: 530px) {
 
   .social-icons__icon {
@@ -1325,4 +1334,8 @@ edit gulp/templates/sprite*/
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.social-icons__sprite {
+  display: block;
 }

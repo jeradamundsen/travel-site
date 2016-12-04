@@ -8,6 +8,13 @@
     margin: 0 5px 5px 5px;
     width: 33%;
     height: 72px;
+    .icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
   @mixin atSmall {
     width: 72px;
@@ -20,5 +27,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+  }
+
+  &__sprite {
+    display: block;
   }
 }
