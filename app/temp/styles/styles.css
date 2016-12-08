@@ -809,6 +809,7 @@ a {
 
 .section-title--less-margin {
   margin-bottom: 1.3rem;
+  margin-top: 0;
 }
 
 @media(min-width: 660px){
@@ -1082,6 +1083,10 @@ edit gulp/templates/sprite*/
           transform-origin: 50% 0;
   -webkit-transform: translateX(-50%) scale(.8);
           transform: translateX(-50%) scale(.8);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   top: 0;
 }
 
@@ -1091,6 +1096,11 @@ edit gulp/templates/sprite*/
     left: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+
+  .site-header--dark .site-header__logo {
+    -webkit-transform: scale(.57);
+            transform: scale(.57);
   }
 }
 
@@ -1268,6 +1278,10 @@ edit gulp/templates/sprite*/
     padding: 12px 0;
     background-color: transparent;
   }
+
+  .primary-nav a.is-current-link {
+    color: #fabb69;
+  }
 }
 
 .reveal-item {
@@ -1288,6 +1302,21 @@ edit gulp/templates/sprite*/
   background-color: rgba(255,255,255, .94);
   z-index: 5;
   bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__inner {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
 }
 
 .modal__description {
@@ -1295,6 +1324,23 @@ edit gulp/templates/sprite*/
   font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.65;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  color: #2f5572;
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: #d59541;
 }
 
 .social-icons {
@@ -1310,20 +1356,10 @@ edit gulp/templates/sprite*/
   height: 72px;
 }
 
-.social-icons__icon .icon {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@media (min-width: 530px) {
+@media (min-width: 880px) {
 
   .social-icons__icon {
     width: 72px;
-    margin: 0 5px;
   }
 }
 
@@ -1334,8 +1370,4 @@ edit gulp/templates/sprite*/
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-}
-
-.social-icons__sprite {
-  display: block;
 }
