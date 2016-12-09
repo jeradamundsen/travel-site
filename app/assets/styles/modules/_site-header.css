@@ -36,6 +36,10 @@
     transition: transform .3s ease-out;
     top: 0;
 
+    &__graphic {
+      text-indent: -999999px;
+    
+    }
     @mixin atMedium {
       left: auto;
       transform: translateX(0);

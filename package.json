@@ -2,6 +2,9 @@
   "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
+    "gulp-imagemin": "^3.1.1",
+    "gulp-usemin": "^0.3.26",
+    "imagemin": "^5.2.2",
     "jquery": "^2.2.4",
     "jquery-smooth-scroll": "^2.0.0",
     "normalize.css": "^5.0.0",
