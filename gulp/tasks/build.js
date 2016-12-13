@@ -39,4 +39,9 @@ gulp.task('usemin',['styles','scripts'], function(){
   }))
   .pipe(gulp.dest('./docs'))
 })
-gulp.task('build',['deleteDist', 'optimizeImages','usemin', 'useminTrigger'])
+gulp.task('copyGeneralFiles',['deleteDist'], function(){
+  var pathsToCopy = ['./app/**/*','!./app/assets/images','!./app/assets/scripts/**','!.app/assets/styles/**','!./app/temp','!./app/temp/**']
+  gulp.src(pathsToCopy)
+  .pipe(gulp.dest('./docs'))
+})
+gulp.task('build',['deleteDist','copyGeneralFiles', 'optimizeImages','usemin', 'useminTrigger'])
